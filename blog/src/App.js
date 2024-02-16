@@ -1,4 +1,5 @@
 import Topbar from "./components/topbar/Topbar";
+import Contact from "./pages/contact/Contact";
 import Homepage from "./pages/homepage/Homepage";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
@@ -34,6 +35,7 @@ function App() {
           path="/settings"
           element={currentUser ? <Settings /> : <Navigate to="/login" />}
         />
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>
   );
